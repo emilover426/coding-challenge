@@ -5,15 +5,17 @@ Emily Hao
 ## Work and Project Examples
 Here are three examples of programming projects I have worked on and completed recently.
 
-###
-What things you need to install the software and how to install them
+### Guess the Word!
+As a final project for User Interface Design, my team and I created a word guessing game. Two players take turns writing a sentence, choosing three gifs to replace a word with, and guessing what the hidden word is based on the gif. We used the GIPHY API and bootstrapping templates. The focus of the assignment was creating a user-friendly interface that followed Nielson's 10 Usability Heuristics. For example, to prevent user error, if a player tries to select less than 3 gifs, the "Select" button will shake, indicating system status and preventing error. Game instructions are in the User Manual. The user scenarios, prototype design, and implementation process are detailed in the Development Document. The Development Document also contains a heuristic evaluation and more information about design choices.  
 
-```
-Give examples
-```
+To play the game yourself, download the GuessTheWord directory and open 'welcome.html'.
 
-### Focus
+Provide detailed information about your role and contributions to the project.
+My role in this project was to create a prototype on myBalsamiq, conduct testing with the prototype, and implement the second, or guessing, player's actions. More specifically, I focused on displaying the gifs one at a time, allowing the second player to guess the hidden word, and determining if the guess is right. This task required me to learn more about Javascript and how I an use it make interactive elements on an HTML webpage. Some challenges I encountered were asynchronous calls to the API and code organization. Also, this project demanded good communication; multiple components implemented by each teammate had to be integrated properly.
 
+### Compiler for Graphiti
+Graphiti is a programming language designed to support graph algorithms. It seeks to simplify initializing graphs, creating and removing edges and nodes, and
+traverse the graph, and conduct queries. This project was due to
 A step by step series of examples that tell you how to get a development env running
 
 Say what the step will be
