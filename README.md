@@ -5,7 +5,7 @@ Emily Hao
 ## Work and Project Examples
 Here are three examples of programming projects I have worked on and completed recently.
 
-### 
+###
 What things you need to install the software and how to install them
 
 ```
