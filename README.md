@@ -47,7 +47,7 @@ A large component of this assignment was the most efficient and simplest ways to
 
 
 ## Inspiration
-
+###
 
 ## Focus
 
