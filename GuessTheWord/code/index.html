@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodingSuperStars</title>
+
+    <!-- jQuery Core -->
+    <!-- jQuery Core 3.3.1 - uncompressed -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <!-- jQuery UI -->
+    <!-- jQuery UI 1.12.1 - uncompressed -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+
+    <!-- Popovers rely on the 3rd party library Popper.js for positioning. -->
+    <!-- You must include popper.min.js before bootstrap.js or use bootstrap.bundle.min.js / bootstrap.bundle.js which contains Popper.js in order for popovers to work! -->
+    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js"></script>
+
+    <!-- BootstrapCDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Local JS file -->
+    <script src="js/script.js"></script>
+    <script src="js/store.legacy.min.js"></script>
+
+    <!-- Local CSS file -->
+    <link rel="stylesheet" href="css/styles.css" media="all">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron text-center">
+            <br></br>
+            <h1 class="display-2">Guess the Word!</h1>
+            <h3>Write a sentence and hide a word with 3 GIFs.</h3>
+            <h3>Let your friend guess what the hidden word is.</h3>
+    </div>
+    <div class="row">
+        <div class="col-sm-8">
+            <div id = "write">
+            </div>
+            <div class="form-group">
+                <input autocomplete="off" type="text" class="form-control" id="inputText" placeholder="Write a sentence ...">
+            </div>
+            <button id="popover" data-trigger="hover" type="button" class="btn btn-primary btn-submit">
+                Start
+            </button>
+
+            <button id="restartBtn" type="button" class="btn btn-danger">Restart</button>
+
+            <div class="form-group">
+
+                <!-- Empty Space -->
+            </div>
+
+            <!-- <div>
+                <h3>player1 score</h3>
+                <p id="score1"></p>
+            </div> -->
+
+
+            <ul class="list-group">
+                <!--<li class="list-group-item">-->
+                    <!--&lt;!&ndash;Specific markup required for dismiss-on-next-click&ndash;&gt;-->
+                    <!--&lt;!&ndash;For proper cross-browser and cross-platform behavior, you must use the <a> tag, not the <button> tag, and you also must include a tabindex attribute.&ndash;&gt;-->
+                    <!--<a tabindex="0" role="button" class="btn btn-outline-primary gif-popover" data-placement="bottom">Coding</a>-->
+                    <!--<a tabindex="0" role="button" class="btn btn-outline-primary gif-popover" data-placement="bottom">Super</a>-->
+                    <!--<a tabindex="0" role="button" class="btn btn-outline-primary gif-popover" data-placement="bottom">Stars</a>-->
+                <!--</li>-->
+            </ul>
+            <div id = "guess-area"> </div>
+        </div>
+        <div class="col-sm-4" class="container">
+
+            <h3>&nbsp Score Board</h3>
+            <table id="scoreBoard" class="table">
+                <thead>
+                    <tr>
+                    <th id="playerScore1">Player 1</th>
+                    <th id="playerScore2">Player 2</th>
+                    </tr>
+                </thead>
+                <tbody id="scoreBody">
+
+                </tbody>
+            </table>
+            <h3>&nbsp History</h3>
+            <table id="historyBoard" class="table">
+                <thead>
+                    <tr>
+                    <th>Word</th>
+                    <th>GIF1</th>
+                    <th>GIF2</th>
+                    <th>GIF3</th>
+                    </tr>
+                </thead>
+                <tbody id="historyBody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

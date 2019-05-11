@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodingSuperStars</title>
+
+    <!-- jQuery Core -->
+    <!-- jQuery Core 3.3.1 - uncompressed -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <!-- jQuery UI -->
+    <!-- jQuery UI 1.12.1 - uncompressed -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+
+    <!-- Popovers rely on the 3rd party library Popper.js for positioning. -->
+    <!-- You must include popper.min.js before bootstrap.js or use bootstrap.bundle.min.js / bootstrap.bundle.js which contains Popper.js in order for popovers to work! -->
+    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js"></script>
+
+    <!-- BootstrapCDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Local JS file -->
+    <script src="js/script.js"></script>
+    <script src="js/store.legacy.min.js"></script>
+
+    <!-- Local CSS file -->
+    <link rel="stylesheet" href="css/styles.css" media="all">
+
+</head>
+
+<style>
+
+    .left {
+        float:left;
+        width: 50%;
+        /*border-right:1px solid black;*/
+    }
+    .right {
+        float:right;
+        width: 45%;
+    }
+    .bottom {
+        /*border-top:1px solid black;*/
+        clear: both;
+    }
+
+</style>
+
+<script>
+    $( function() {
+        $( "#datepicker" ).datepicker({
+            changeMonth: true,
+            changeYear: true,
+            maxDate: "+0M +0M",
+            minDate: -36500,
+        });
+    } );
+</script>
+
+<body>
+
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1 class="display-2">Guess the Word!</h1>
+    </div>
+
+    <!--https://stackoverflow.com/questions/20533971/divide-div-to-left-right-bottom-in-html-->
+    <div class="left">
+
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <p class="h4">Player 1</p>
+                    <label for="p1Name">Name</label>
+                    <input type="email" class="form-control" id="p1Name" placeholder="Enter your name">
+                    <div class="form-group">
+                        <!-- Empty Space -->
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="ageCheck1">
+                        <label class="form-check-label" for="ageCheck1">
+                            Are you over 18?
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <p class="h4">Player 2</p>
+                    <label for="p2Name">Name</label>
+                    <input type="email"  class="form-control" id="p2Name" placeholder="Enter your name">
+                    <div class="form-group">
+                        <!-- Empty Space -->
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="ageCheck2">
+                        <label class="form-check-label" for="ageCheck2">
+                            Are you over 18?
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="bottom text-center">
+            <button type="button" id="goBtn" class="btn btn-success btn-lg btn-block">Go</button>
+        </div>
+        </div>
+    <div class="right">
+
+        <form>
+
+        </form>
+
+        <h1 class="display-4 text-center">User Guide</h1>
+        <p class="h5">Guess the Word! is a game application for two players.</p>
+        <p class="h5">The players take turns to be the questioner and the guesser.</p>
+        <p class="h5">While player 1 types in one sentence and chooses a word from the sentence to be hidden, player 2 will try to complete the sentence with the help of three gif hints related to the hidden word.</p>
+    </div>
+    </div>
+
+</div>
+
+</body>
+</html>

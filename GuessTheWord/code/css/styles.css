@@ -1,0 +1,41 @@
+.jumbotron { 
+    background-color: #f4511e; /* Orange */
+    color: black;
+    background-image: url("http://4.bp.blogspot.com/_iKKwwKqC5ws/Rka3hR9CXVI/AAAAAAAAACc/idcsdPJWdNA/s1600/circles.jpg");
+    background-size: cover;
+}
+*:focus {
+    outline: none;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr > td.info {
+    background-color: #d9edf7 !important;
+  }
+.board {
+    padding: 20px;
+    
+    margin-top: 50px;
+    background: #e6e6e6;
+    border-radius: 10px;
+}
+
+.btn-outline-primary {
+    margin: 2px;
+}
+
+.gif_blur {
+    /* -webkit-filter: blur(5px);
+    filter: blur(5px); */
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+}
+
+.tableImage img {
+    width:230px;
+    height:230px;
+}
