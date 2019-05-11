@@ -1,0 +1,10 @@
+int main() {
+    list <int> l;
+    int x;
+    l = [1,2,3];
+    x = l.at(0);
+    printi(x);
+    l.set(0, 5);
+    printi(l.at(0));
+    return 0;
+}

@@ -1,0 +1,14 @@
+int foo(bool b, int a)
+{
+  int c;
+  bool d;
+
+  c = a;
+
+  return c + 10;
+}
+
+int main() {
+ printi(foo(false, 37));
+ return 0;
+}

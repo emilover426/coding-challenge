@@ -1,0 +1,16 @@
+int main()
+{
+    int i; int j; int k; int m;
+    i = 1; i += 5;
+    j = 10; j -= 5;
+    k = 1; k *= 5;
+    m = 10; m /= 5;
+
+    printi(2);
+    printi(i);
+    printi(j);
+    printi(k);
+    printi(m);
+
+    return 0;
+}

@@ -1,0 +1,23 @@
+int main()
+{
+	list<float> x;
+	float y;
+	x = [3.0, 3.5, 4.0];
+	if (x.at(1) == 3.5)
+	{
+		print("true");
+	}
+	else
+	{
+		print("false");
+	}
+	y = x.remove_head();
+	if(y == 3.0)
+	{
+		print("true");
+	}
+	else
+	{
+		print("false");
+	}
+}

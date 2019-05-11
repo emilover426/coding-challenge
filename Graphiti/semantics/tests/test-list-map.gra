@@ -1,0 +1,24 @@
+int main() {
+    map x;
+    map y; 
+    int i;
+    list<map> z;
+    x = {[]};
+    y = {[]};
+    i = 1;
+    x.put("Michael","Language Guru");
+    y.put("Michael","Language Guru");
+    if (x.isEqual(y) == i) {
+    	print("true");
+    }
+    else {
+        print("false");
+    }
+    z = [x, y];
+    if(z.at(0).isEqual(z.at(1))==1) {
+    	print("true");
+    }
+    else {
+        print("false");
+    }
+}

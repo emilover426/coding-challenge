@@ -1,0 +1,10 @@
+int main() {
+    map m;
+    int i;
+    m = {[]};
+    m.put("Michal","Language Guru");
+    i = m.containsValue("Language Guru");
+    if (i == 1){
+    	print("true");
+    }
+}

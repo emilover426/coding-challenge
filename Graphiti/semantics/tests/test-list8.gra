@@ -1,0 +1,9 @@
+int main() {
+    list <int> x;
+    int y;
+    x = [1,2,3,4];
+    y = 2; 
+    x.add_head(y);
+    printl(x); 
+    return 0; 
+}

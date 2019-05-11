@@ -1,0 +1,8 @@
+int main() {
+    list <int> x;
+    int z;
+    x = [1,2,3,4];
+    z = x.at(2);
+    printi(z);
+    return 0;
+}

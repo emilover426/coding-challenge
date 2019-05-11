@@ -1,0 +1,9 @@
+int main() {
+    map m;
+    m  = {[]};
+    m.put("Michal","Language Guru");
+    m.put("Andrew","Manager");
+    m.removeNode("Andrew");
+    printm(m);
+    return 0; 
+}

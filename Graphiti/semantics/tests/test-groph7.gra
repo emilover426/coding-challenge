@@ -1,0 +1,11 @@
+int main() {
+    graph g;
+    map a;
+    map b;
+    map m;
+    a = {["uni1" : "mp3242"]};
+    b = {["uni2" : "esh2160"]};
+    g = {{a->b}};
+
+    return 0;
+}

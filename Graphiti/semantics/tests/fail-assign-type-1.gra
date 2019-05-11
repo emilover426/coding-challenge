@@ -1,0 +1,14 @@
+int main()
+{
+
+int i; 
+
+bool y;
+
+i = 2;
+i = 3;
+b = true;
+b = false;
+i = false; /* Fail: assigning a bool to an integer */
+return 0; 
+}

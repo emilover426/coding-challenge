@@ -1,0 +1,12 @@
+void void_func()
+{
+  return;
+}
+
+int main()
+{
+  int i;
+
+  i = void_func(); /* Fail: assigning a void to an integer */
+}
+

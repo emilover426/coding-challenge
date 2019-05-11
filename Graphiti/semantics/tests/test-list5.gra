@@ -1,0 +1,9 @@
+int main() {
+    list <int> x;
+    int z;
+    x = [1,2,3,4];
+    z = x.remove_head();
+    printl(x);
+    printi(z); 
+    return 0; 
+} 

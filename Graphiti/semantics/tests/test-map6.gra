@@ -1,0 +1,16 @@
+int main() {
+    map x;
+    map y; 
+    int i;
+    x = {[]};
+    y = {[]};
+    i = 1;
+    x.put("Michael","Language Guru");
+    y.put("Michael","Language Guru");
+    if (x.isEqual(y) == i) {
+    	print("true");
+    }
+    else {
+        print("false");
+    }
+}

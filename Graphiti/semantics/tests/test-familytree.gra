@@ -1,0 +1,60 @@
+int main() {
+	graph smith_fam;
+	graph green_fam;
+	graph smith_green;
+	map m1;
+	map m2;
+	map m3;
+	map m4;
+	map m5;
+	map m6;
+	map m7;
+
+	m1 = {["name":"John Smith","age":"88","state":"Vermont"]};
+	m2 = {["name":"Mary Smith","age":"88","state":"Vermont"]};
+	
+	smith_fam = {{ m1 ["spouse_of"]-- m2}};
+
+	m3 = {["name":"Amy Green","age":"50","state":"New York"]};
+	m4 = {["name":"Bob Green","age":"53","state":"New York"]};
+    m5 = {["name":"Ellie Green","age":"15","state":"New York"]};
+
+    smith_fam{{m1["father_of"]->m3}};
+	smith_fam{{m2 ["mother_of"]-> m3}};
+	smith_fam{{m3 ["spouse_of"]-> m4}}; 
+	smith_fam{{m4 ["father_of"]-> m7}};
+	smith_fam{{m3 ["mother_of"]-> m7}};
+
+	m5 = {["name":"Steve Green","age":"45","state":"California"]};
+	m6 = {["name":"Martha Green","age":"18","state":"California"]};
+
+
+	green_fam = {{ m5 ["father_of"]-> m6}};
+	green_fam = {{ m3 ["brother_of"]-> m5}};
+	green_fam = {{ m3 ["father_of"]-> m7}};
+
+	smith_green = smith_fam|green_fam;
+	
+	print("This is the Green Family!");
+	printg(green_fam);
+	
+	print("This is the Smith Family!");
+	printg(smith_fam);
+
+	print("This is the Green-Smith Family!");
+	printg(smith_green);
+	
+	smith_green = smith_fam&green_fam;
+	print("Bob Green is both in the Smith Family and Green Family!");
+	
+	smith_fam{{m3 ["ex_spouse"]-> m4}};
+	print("Caroline and Bob got divorced...");
+	print("* relationship change *");
+	printg(smith_fam);
+    	
+	smith_fam{{m3~>m4}};
+	print("Caroline and Bob don't want a relationship anymore...");
+	print("* deleted relationship edge *");
+	printg(smith_fam);
+	return 0;
+}

@@ -1,0 +1,11 @@
+int main() { 
+	list <list<int>> l;
+	list<int> ll;
+	list<int> lll;
+	ll = [1,2,3];
+        l = [ll, ll, ll];
+	lll = l.at(0);
+	printi(lll.at(0));
+	return 0; 
+}
+/*declaring empty list*/ 

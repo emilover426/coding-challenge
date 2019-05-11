@@ -1,0 +1,17 @@
+int main() {
+	string s1;
+	string s2;
+        s1 = "hello ";
+        s2 = "world!";
+	print(s1 + "world!");
+	if(s1 != s2) {
+    		print("hello != world!");
+	}
+	if(s1 == s1) {
+    		print("hello == hello");
+	}
+	if(s2 == "World!") {
+    		print("world! != World!");
+	}
+	return 0;
+} 

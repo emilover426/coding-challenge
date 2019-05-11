@@ -1,0 +1,22 @@
+int main(){
+    
+    graph g;
+    map a;
+    map b;
+    map c;
+
+    a = {["uni1" : "a"]};
+    b = {["uni2" : "b"]};
+    c = {["uni3" : "c"]};
+
+    g = {{a,b,c}};
+    g{{a["Hello"]->b, a["Goodbye"]->c}};
+    g.get_neighbors(a);
+    g.get_edges(a);
+    g.get_all_nodes();
+
+    return 0;
+
+
+
+}

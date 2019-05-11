@@ -1,0 +1,6 @@
+/* can declare string */
+int main()
+{
+        string x;
+        return 0;
+}

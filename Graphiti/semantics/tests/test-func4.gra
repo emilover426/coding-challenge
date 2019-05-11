@@ -1,0 +1,14 @@
+int addint(int a, int b)
+{
+  int c;
+  c = a + b;
+  return c;
+}
+
+int main()
+{
+  int d;
+  d = addint(52, 10);
+  printi(d);
+  return 0;
+}

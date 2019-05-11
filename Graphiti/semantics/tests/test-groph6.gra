@@ -1,0 +1,23 @@
+int main() {
+    
+    graph g;
+    graph h;    
+    graph i;
+    graph j;
+    graph k;
+    map a;
+    map b;
+    map c;
+
+    a = {["uni1" : "mp3242"]};
+    b = {["uni2" : "esh2160"]};
+    c = {["uni3" : "stl2121"]};
+    g = {{a,b}};
+    h = {{b,c}};
+    i = g | h;
+    j = g & h;
+    k = g + h;
+
+    return 0;
+
+}

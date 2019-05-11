@@ -1,0 +1,9 @@
+int main() {
+    map m;
+    string a;
+    m = {[]};
+    m.put("Michal","Language Guru");
+    a = m.get("Michal");
+    print(a);
+    return 0;
+}

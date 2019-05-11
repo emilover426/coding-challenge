@@ -1,0 +1,5 @@
+int main() {
+    graph g;
+    g = {{}};
+    return 0;
+}

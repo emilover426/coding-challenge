@@ -1,0 +1,17 @@
+int main() {
+    graph g;
+    map a;
+    map b;
+    map c;
+    a = {["uni1" : "mp3242"]};
+    b = {["uni2" : "esh2160"]};
+    c = {["uni3" : "afq2101"]}; 
+    g = {{a,b}};
+    g{{c}};
+    g{{a->b, c->a}};
+    g{{a~>c}};
+    g{{b["bffs with"]->c}};
+    g{{~a}};
+    
+    return 0;
+}

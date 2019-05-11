@@ -1,0 +1,5 @@
+/* BAD: no return type*/
+main()
+{
+        return 0;
+}

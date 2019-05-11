@@ -1,0 +1,6 @@
+int main() {
+    map m;
+    m = {["Michal":"Language Guru","Alice":"System Architect"]};
+    printm(m);
+    return 0;
+}

@@ -1,0 +1,11 @@
+int main() {
+    int x;
+    int y;
+    x = 16;
+    y = 3;
+    printi(5%5);
+    printi(x%y);
+    printi(y%x);
+    return 0;
+}
+

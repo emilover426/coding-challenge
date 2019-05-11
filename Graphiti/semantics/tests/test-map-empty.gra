@@ -1,0 +1,8 @@
+int main() { 
+    map x;
+    string s; 
+    x = {[]};
+    s = "ok";
+    print(s);
+    return 0;
+}

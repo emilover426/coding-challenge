@@ -1,0 +1,12 @@
+int main(){
+
+	int x;
+	char z;
+	bool y;
+	string b;
+
+	x = 2;
+
+
+
+}

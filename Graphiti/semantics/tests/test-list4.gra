@@ -1,0 +1,11 @@
+int main() {
+    list <int> z;
+    list <int> x;
+    z = [5];
+    x = [1,2,3,4];
+    x = x + z;
+    printl(x);
+    x = x + [6];
+    printl(x);
+    return 0; 
+}

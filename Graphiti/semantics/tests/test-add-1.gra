@@ -1,0 +1,11 @@
+int addint(int x, int y)
+{ 
+  return x + y;
+}
+
+int main()
+{
+  printi( addint(17, 25) );
+  return 0;
+}
+

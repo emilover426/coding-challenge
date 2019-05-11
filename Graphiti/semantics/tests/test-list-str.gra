@@ -1,0 +1,23 @@
+int main()
+{
+	list<string> x;
+	x = ["alice", "andrew", "sydney", "michael", "emily"];
+	if(x.at(0) == "alice")
+	{
+		print("true");
+	}
+	else
+	{
+		print("false");
+	}
+	x.set(2, "sidney");
+	if(x.at(2) == "sidney")
+	{
+		print("true");
+	}
+	else
+	{	
+		print(x.at(2));
+		print("false");
+	}
+}

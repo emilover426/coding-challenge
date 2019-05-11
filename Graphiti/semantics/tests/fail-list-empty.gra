@@ -1,0 +1,6 @@
+int main() { 
+	list <string> l;
+        l = [];
+	return 0; 
+}
+/*declaring empty list*/ 

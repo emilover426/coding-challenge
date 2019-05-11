@@ -1,0 +1,6 @@
+int main()
+{	
+	list<int> x;
+	x = ["1", "2"];
+	return 0;
+}

@@ -1,0 +1,6 @@
+int main() {
+	list <int> l; 
+	l = [1,2,3];
+	printl(l);
+	return 0;
+}

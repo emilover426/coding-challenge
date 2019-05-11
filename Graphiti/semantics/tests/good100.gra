@@ -1,0 +1,28 @@
+int main(){
+  
+  int a;
+  int b;
+  graph g;
+  graph h;
+  graph i;
+  bool j;
+
+
+  a = 1;
+  b = 1;
+  j = True;
+
+  g = {{a->b}};
+  h = {{a--b}};
+  i = {{a("a")--b}};
+  
+
+  if (j) {
+    printi(100);
+  }
+
+  return 0;
+
+
+
+}
