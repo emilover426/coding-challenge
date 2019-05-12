@@ -29,7 +29,7 @@ To visualize the bi-directional RRT algorithm, write the following:
 ```
 $ python rrt_2.py world_obstacles.txt start_goal.txt
 ```
-
+Packages
 My partner and I mostly worked together on every element of the assignment. I wrote functions that built obstacle representations, detected collisions, and connected nodes. I also wrote the functions that implement PRM and bi-directional RRT.
 In visualize_map.py:
   ```
@@ -39,6 +39,10 @@ In rrt_2.py:
   ```
   RRT.build_rrt(), RRt.get_nearest().
   ```
+Packages may need to imported.
+Here is a link to the video of our bi-directional rapidly exploring random tree:
+https://www.youtube.com/watch?v=GO9amDYSnns 
+
 A large component of this assignment was figuring out the most efficient and simplest way to implement certain behaviors. This entailed finding existing libraries and experimenting with parameters. For example, to detect collisions, we used Shapely to build representations of obstacles and paths. We also used Scikit-learn to find neighboring nodes and Matlotlib to visualize paths. Another challenge we dealt with was animating the RRT tree. This led us to adjust our code and create an RRT class in order to use an existing function in Matplotlib, emphasizing the importance of flexbility.
 
 ## Inspiration
